@@ -4,6 +4,7 @@ set fish_greeting
 set VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 set -x SHELL /usr/bin/fish
+set -g theme_display_user yes
 
 ## Export variable need for qt-theme
 if type qtile >>/dev/null 2>&1
