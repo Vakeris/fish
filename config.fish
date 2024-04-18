@@ -150,6 +150,7 @@ alias pacup 'sudo pacman -Syu'
 alias pacin 'sudo pacman -S'
 alias pacrm 'sudo pacman -R'
 alias pacclean 'sudo pacman -Scc'
+alias ls 'lsd -lah'
 alias fastfetch 'fastfetch --load-config dr460nized'
 
 # Get fastest mirrors
