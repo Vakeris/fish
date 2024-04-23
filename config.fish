@@ -151,6 +151,9 @@ alias pacin 'sudo pacman -S'
 alias pacrm 'sudo pacman -Rns'
 alias pacclean 'sudo pacman -Scc'
 alias ls 'lsd -lah'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias grubup="sudo update-grub"
+
 alias fastfetch 'fastfetch --load-config dr460nized'
 
 # Get fastest mirrors
