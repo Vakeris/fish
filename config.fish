@@ -1,3 +1,11 @@
+#source /usr/share/cachyos-fish-config/cachyos-config.fish
+
+# overwrite greeting
+# potentially disabling fastfetch
+#function fish_greeting
+#    # smth smth
+#end
+#
 ## Set values
 # Hide welcome message & ensure we are reporting fish as shell
 set fish_greeting
@@ -44,7 +52,7 @@ end
 
 
 ## Advanced command-not-found hook
-source /usr/share/doc/find-the-command/ftc.fish
+#source /usr/share/doc/find-the-command/ftc.fish
 
 
 ## Functions
@@ -134,7 +142,7 @@ alias gitpkg 'pacman -Q | grep -i "\-git" | wc -l' # List amount of -git package
 alias grep 'ugrep --color=auto'
 alias egrep 'ugrep -E --color=auto'
 alias fgrep 'ugrep -F --color=auto'
-alias grubup 'sudo update-grub'
+#alias grubup 'sudo update-grub'
 alias hw 'hwinfo --short' # Hardware Info
 alias ip 'ip -color'
 alias psmem 'ps auxf | sort -nr -k 4'
@@ -152,9 +160,10 @@ alias pacrm 'sudo pacman -Rns'
 alias pacclean 'sudo pacman -Scc'
 alias ls 'lsd -lah'
 alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-alias grubup="sudo update-grub"
+alias grubup='sudo grub-mkconfig'
+#alias grubup="sudo update-grub"
 
-alias fastfetch 'fastfetch --load-config dr460nized'
+#alias fastfetch 'fastfetch --load-config dr460nized'
 
 # Get fastest mirrors
 alias mirror 'sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist'
